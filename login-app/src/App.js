@@ -1,13 +1,13 @@
 import React , { useState } from "react";
 import "./App.css";
 const App = () => {
-  const [data, setdata] = useState({
+  const [data, setData] = useState({
     username :'',
     password :''
   })
   const {username, password} = data
   const handleChanger = e => {
-    setdata({...data, [e.target.name]:[e.target.value]})
+    setData({...data, [e.target.name]:[e.target.value]})
   }
   const submitHandler = e => {
     e.preventDefault()
